@@ -9,5 +9,5 @@ dist/
 .env
 .env.*
 config.toml
-config/
+/config/
 !api/

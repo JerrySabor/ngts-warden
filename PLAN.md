@@ -126,5 +126,4 @@ MCP starts read-only. Non-GET execution requires both `ngts-warden mcp --allow-w
 
 - NGTS `application(s)` and `team(s)` compatibility fields remain omitted because the official docs state they are ignored by NGTS.
 - `/serviceaccount` commands are labeled “Built-In Accounts” to match the NGTS UI.
-- Configus Maximus supplies architectural reference only; NGTS Warden will not read or depend on its private configuration files.
 - A TUI, container image, public Go SDK, live credential test, and initial `v0.1.0` release are intentionally deferred.

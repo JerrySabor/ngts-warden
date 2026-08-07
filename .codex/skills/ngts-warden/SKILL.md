@@ -1,11 +1,11 @@
 ---
 name: ngts-warden
-description: Safely use the NGTS Warden Go CLI or MCP stdio server to inspect Palo Alto NGTS resources, discover all pinned OpenAPI operations, preview non-GET requests, manage named OAuth profiles, and execute explicitly authorized API actions. Use for NGTS certificate, machine, endpoint, credential, monitoring, approval, plugin, account, event-log, or raw API work.
+description: Use NGTS Warden, an unofficial alpha Go CLI and MCP stdio server for Palo Alto Networks Next-Gen Trust Security, to inspect NGTS resources, discover pinned OpenAPI operations, preview non-GET requests, manage named OAuth profiles, and execute explicitly authorized API actions. Use for NGTS certificate, machine, endpoint, credential, monitoring, approval, plugin, account, event-log, or raw API work.
 ---
 
 # NGTS Warden
 
-Use the installed `ngts-warden` command as the primary interface. It is an unofficial client for the Palo Alto NGTS API and is generated from the repository's pinned OpenAPI snapshot.
+Use the installed `ngts-warden` command as the primary interface. This proof-of-concept client supports API-driven Palo Alto Networks NGTS workflows and is generated from the repository's pinned official OpenAPI snapshot. It is not official Palo Alto Networks software.
 
 ## Workflow
 
