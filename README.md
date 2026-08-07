@@ -1,12 +1,17 @@
 # NGTS Warden
 
-NGTS Warden is an unofficial Go CLI and MCP stdio server for exploring and automating the Palo Alto Networks Next-Gen Trust Security (NGTS) API.
+NGTS Warden is an independent, unofficial alpha proof of concept for working with Palo Alto Networks Next-Gen Trust Security (NGTS). It provides a Go CLI and MCP stdio server for the official NGTS REST API.
 
-It exposes every operation in the pinned official OpenAPI snapshot as a generated, discoverable command while keeping a raw authenticated request escape hatch. Non-GET requests preview by default and require explicit execution.
+The command catalog is generated from a pinned copy of Palo Alto Networks' official OpenAPI specification. It makes the documented API operations discoverable, preserves a raw authenticated request escape hatch, and previews non-GET requests before execution.
 
-> **Alpha proof of concept:** NGTS Warden is experimental and not production-ready. APIs, command names, configuration formats, and safety behavior may change without notice. Do not use it with production credentials or customer data until it has been independently reviewed for your environment.
+> **Project status — Alpha:** NGTS Warden is experimental and not production-ready. Interfaces and behavior may change without notice. Evaluate it with a disposable test tenant and least-privileged credentials; do not use production credentials or customer data.
 
-This project is not affiliated with or endorsed by Palo Alto Networks. Palo Alto Networks, NGTS, and related names are trademarks of their respective owners.
+NGTS Warden is intended to support evaluation and API-driven workflows for this Palo Alto Networks capability. It is not an official Palo Alto Networks product or support offering and is not affiliated with or endorsed by Palo Alto Networks. Palo Alto Networks, NGTS, and related names are trademarks of their respective owners.
+
+## Official resources
+
+- [Next-Gen Trust Security product documentation](https://docs.paloaltonetworks.com/next-gen-trust-security)
+- [NGTS API reference](https://pan.dev/scm/api/config/ngts/ngts-api/)
 
 ## Install
 
@@ -17,11 +22,11 @@ make install-local
 ngts-warden --help
 ```
 
-Future tagged releases publish cross-platform archives and checksums. The v1 distribution is a single static binary; no container runtime is required.
+Future tagged releases will publish cross-platform archives and checksums. The planned distribution is a single static binary; no container runtime is required.
 
 ## Configure authentication
 
-For this alpha proof of concept, use a disposable test tenant and least-privileged service account. NGTS uses OAuth 2.0 client credentials. Create a service account with the appropriate roles, then configure a named profile:
+While the project is in alpha, use a disposable test tenant and a least-privileged service account. NGTS uses OAuth 2.0 client credentials. Create a service account with the appropriate roles, then configure a named profile:
 
 ```text
 ngts-warden config init production \
@@ -91,7 +96,7 @@ ngts-warden mcp --allow-write
 
 ## API provenance
 
-The checked-in API snapshot, checksum, upstream commit, and generated operation inventory are in [`api/`](api/) and [`docs/api-coverage.md`](docs/api-coverage.md). Refresh them with:
+The command catalog comes from the official [Palo Alto Networks NGTS API reference](https://pan.dev/scm/api/config/ngts/ngts-api/). The checked-in API snapshot, checksum, upstream commit, and generated operation inventory are in [`api/`](api/) and [`docs/api-coverage.md`](docs/api-coverage.md). Refresh them with:
 
 ```text
 make update-openapi
