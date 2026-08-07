@@ -1,5 +1,8 @@
 # Security policy
 
+NGTS Warden is an alpha proof of concept and is not production-ready. Treat all
+interfaces and security behavior as experimental until independently reviewed.
+
 ## Reporting a vulnerability
 
 Do not open a public issue for credentials, token-handling bugs, request smuggling, or other security-sensitive defects. Email the maintainer at `jerrysabor@gmail.com` with a concise description, reproduction steps, affected version, and a safe contact method.

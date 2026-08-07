@@ -4,6 +4,8 @@ NGTS Warden is an unofficial Go CLI and MCP stdio server for exploring and autom
 
 It exposes every operation in the pinned official OpenAPI snapshot as a generated, discoverable command while keeping a raw authenticated request escape hatch. Non-GET requests preview by default and require explicit execution.
 
+> **Alpha proof of concept:** NGTS Warden is experimental and not production-ready. APIs, command names, configuration formats, and safety behavior may change without notice. Do not use it with production credentials or customer data until it has been independently reviewed for your environment.
+
 This project is not affiliated with or endorsed by Palo Alto Networks. Palo Alto Networks, NGTS, and related names are trademarks of their respective owners.
 
 ## Install
@@ -19,7 +21,7 @@ Future tagged releases publish cross-platform archives and checksums. The v1 dis
 
 ## Configure authentication
 
-NGTS uses OAuth 2.0 client credentials. Create a service account with the appropriate roles, then configure a named profile:
+For this alpha proof of concept, use a disposable test tenant and least-privileged service account. NGTS uses OAuth 2.0 client credentials. Create a service account with the appropriate roles, then configure a named profile:
 
 ```text
 ngts-warden config init production \
