@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for improving NGTS Warden. Keep changes small, documented, and safe for users who may run commands against production tenants.
+Thank you for improving NGTS Warden. Keep changes small, documented, and suitable for evaluation with disposable test tenants.
 
 ## Before opening a pull request
 

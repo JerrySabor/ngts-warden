@@ -43,7 +43,7 @@ func New(version string, stdout, stderr io.Writer) *App {
 	}
 	a := &App{version: version, stdout: stdout, stderr: stderr, opts: &rootOptions{timeout: 60 * time.Second}}
 	spec, err := catalog.Load()
-	root := &cobra.Command{Use: "ngts-warden", Short: "Composable CLI and MCP client for Palo Alto NGTS", SilenceUsage: true, SilenceErrors: true}
+	root := &cobra.Command{Use: "ngts-warden", Short: "Alpha proof-of-concept CLI and MCP client for Palo Alto Networks NGTS", SilenceUsage: true, SilenceErrors: true}
 	root.SetOut(stdout)
 	root.SetErr(stderr)
 	root.PersistentFlags().BoolVar(&a.opts.json, "json", false, "emit a stable JSON envelope")
