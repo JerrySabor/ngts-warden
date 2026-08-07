@@ -1,4 +1,4 @@
 interface:
   display_name: "NGTS Warden"
-  short_description: "Safe NGTS CLI and MCP workflows"
-  default_prompt: "Use $ngts-warden to inspect or safely operate the NGTS API through the CLI or MCP server."
+  short_description: "Alpha NGTS CLI and MCP workflows"
+  default_prompt: "Use $ngts-warden to inspect or operate the Palo Alto Networks NGTS API through the alpha CLI or MCP server while preserving preview and confirmation safeguards."

@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible problem with NGTS Warden.
+description: Report a reproducible problem with this alpha proof of concept.
 title: "bug: "
 labels: [bug]
 body:
