@@ -1,0 +1,12 @@
+name: Feature request
+description: Suggest a safe improvement to the CLI or MCP server.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Explain the workflow and expected command or tool interface.
+    validations:
+      required: true

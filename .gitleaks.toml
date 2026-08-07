@@ -1,0 +1,6 @@
+[allowlist]
+description = "The upstream NGTS OpenAPI example contains a star-redacted placeholder private key."
+paths = [
+  '''^api/openapi\.json$''',
+  '''^internal/catalog/spec\.json$''',
+]

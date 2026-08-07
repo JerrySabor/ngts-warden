@@ -1,0 +1,13 @@
+bin/
+.coverage/
+.cache/
+coverage.out
+dist/
+*.test
+*.prof
+.DS_Store
+.env
+.env.*
+config.toml
+config/
+!api/

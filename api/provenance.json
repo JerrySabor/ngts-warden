@@ -1,0 +1,8 @@
+{
+  "source": "https://raw.githubusercontent.com/PaloAltoNetworks/pan.dev/ea93c24d4ef2ff55e4efd195e6a2739cf7fb2ad0/openapi-specs/scm/config/ngts/tlsprotect-cloud.json",
+  "repository": "https://github.com/PaloAltoNetworks/pan.dev",
+  "commit": "ea93c24d4ef2ff55e4efd195e6a2739cf7fb2ad0",
+  "sha256": "b929b69e2d75a971a28ef30c92eb9c69b35c8a35717e45465ddc2b6e998e85ea",
+  "retrieved": "2026-08-07",
+  "license": "MIT"
+}

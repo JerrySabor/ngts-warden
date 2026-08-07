@@ -1,0 +1,19 @@
+name: Bug report
+description: Report a reproducible problem with NGTS Warden.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the command, version, and a sanitized response or error.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, architecture, and installation method. Never include credentials.
+    validations:
+      required: true
